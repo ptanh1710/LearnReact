@@ -1,0 +1,49 @@
+﻿29 - Hook là gì
+
+    - Là gắn vào / móc vào 
+
+    (trong react có 2 loại component là class và function)
+
+    -> là những method được viết sẵn, cung cấp bởi react js
+    -> mỗi hook có những chức năng và khái niệm khác nhau
+    -> (1) Chỉ dùng cho function component
+
+    - Các loại hook:
+        + useState
+        + useEffect
+        + useLayoutEffect
+        + useRef
+        + useCallback
+        + useMemo
+        + useReducer
+        + useContext
+        + useImperative
+        + useDebugValue
+
+    -> (2) Component đơn giản và dễ hiểu và đầy đủ tính năng
+        - không bị chia logic ra như method trong lifecycle của class component
+        - Không cần sử dụng 'this'
+    
+    -> (3) Sử dụng component như thế nào
+        - Dự án mới => hooks
+        - Dự án cũ
+            + Component mới => Function Component + Hooks
+            + Component cũ => Giữ nguyên, tối ưu sau
+        - Logic nghiệp vụ cần sử dụng các tính chất của OOP => Class Component
+    -> (4) Người mới nên bắt đầu với Function
+    -> (5) Có thể kết hợp sử dụng Function và Class được không? Được
+
+30 - useState 
+ 
+    - Trạng thái của dữ liệu
+    - Thể hiện trạng thái của người dùng ra giao diện
+    - dữ liệu thay đổi -> giao diện thay đổi lại
+
+    const [state, setState] = useState(initState)
+
+        + state: gắn giá trị khởi tạo của initState
+        + setState: Thay đổi state
+        + initState: đổi số đầu vào - giá trị khởi tạo - chỉ dùng 1 lần
+
+31 - useEffect
+
