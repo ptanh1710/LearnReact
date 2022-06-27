@@ -1,7 +1,8 @@
 import './App.css';
 // import UseRef from './Hooks/B8-UseRef/index';
-import UseCallback from './Hooks/B9-UseCallback/index';
+// import UseCallback from './Hooks/B9-UseCallback/index';
 // import Props3 from './JSX-Component-Props/B3-Props';
+import UseMemo from './Hooks/B10-UseMemo/index';
 
 // const data = [
 //   {
@@ -115,7 +116,8 @@ function App() {
       </header> */}
 
      {/* <UseRef/> */}
-     <UseCallback/>
+     {/* <UseCallback/> */}
+     <UseMemo/>
 
     </div>
   );
