@@ -1,16 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import App from './App';
+import App from './App';
 // import B4Dom from './JSX-Component-Props/B4-Dom';
 // import B5ChildrenRenderProps from './JSX-Component-Props/B5-Chidren-RenderProps';
-import Hooks from './Hooks/Hooks';
+// import Hooks from './Hooks/Hooks';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Hooks />
+    <App />
   </React.StrictMode>
 );
 

@@ -47,3 +47,44 @@
 
 31 - useEffect
 
+    - Khi render giao diện xong useEffect mới chạy
+    - Side effect -> nói đến chưỡng trình phần mềm khi thay đổi
+    - useEffect(callback, [dependencies])
+        + callback: bắt buộc
+        + [dependencies]: không bắt buộc
+
+    - Các trường hợp
+     +(1) useEffect với callback
+     +(2) useEffect với callback, []
+     +(3) useEffect với callback, [dependencies]
+
+     => Cả 3 trường hợp
+        + callback luôn được gọi sau khi component mounted
+        + Clean up function: Dọn dẹp nhựng thứ trong bộ nhớ trước khi component unmount
+        + Clean up function sẽ luôn luôn được gọi trước khi callback được gọi (trừ lần mounted)
+
+        *(1) (ít dùng)
+            + Gọi callback  mỗi khi component re-render 
+            + Gọi callback sau khi component thêm element vào DOM
+
+        *(2)
+            + Chỉ gọi callback 1 lần sau khi component mounted
+            + Chỉ dùng để call API hay xử lý logic chạy 1 lần
+
+        *(3)
+            + deps có thể là props, state - biến truyền từ ngoài vào
+            + callback sẽ được gọi lại mỗi khi deps thay đổi
+
+    - useEffect with DOM event
+
+ 32. useRef
+    - Dùng để lưu 1 giá trị nào đó
+
+    cosnt ref = useRef(initialValue)
+        -> initialValue: Có thế có - không thì undefined
+
+    - Có thể lưu trữ DOM element
+
+
+ 33. useMemo   
+    - Giúp tránh thực hiện một logic nào đó không cần thiết
