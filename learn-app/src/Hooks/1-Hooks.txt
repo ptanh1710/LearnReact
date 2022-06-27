@@ -85,6 +85,13 @@
 
     - Có thể lưu trữ DOM element
 
+ 33. useCallback
+    - Giúp tránh tạo ra những hàm mới một cách không cần thiết trong function component
 
- 33. useMemo   
+    - Khi dùng useCallback thì luôn dùng chung với React memo
+        + Còn nếu không thì không dùng
+    
+    useCallback(function, [])
+
+ 34. useMemo   
     - Giúp tránh thực hiện một logic nào đó không cần thiết
